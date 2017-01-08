@@ -4,20 +4,20 @@ var firstScriptTag = document.getElementsByTagName('script')[0]
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
 
 var playerInfoList = [
-  {width:'150', videoId:'lXMskKTw3Bc'},
-  {width:'150', videoId:'Q3E7L_RoyTU'},
-  {width: '150', videoId: 'KNtXIm5By04'},
-  {width: '150', videoId: 'TX-6qPppbjY'},
-  {width: '150', videoId: 'q6EoRBvdVPQ'},
-  {width:'150', videoId: 'o2IeYyYYe1U'},
-  {width:'150', videoId: '1LOoRJ0s0rw'},
-  {width: '150', videoId: 'NwN7PMQtlo8'},
-  {width: '150', videoId: '3hKRVsDPD9s'},
-  {width: '150', videoId: '1Q6DdTcqGy8'},
-  {width: '150', videoId: 'ksWKmF43AqM'}
+  {width:'0', videoId:'lXMskKTw3Bc'},
+  {width:'0', videoId:'Q3E7L_RoyTU'},
+  {width: '0', videoId: 'KNtXIm5By04'},
+  {width: '0', videoId: 'TX-6qPppbjY'},
+  {width: '0', videoId: 'q6EoRBvdVPQ'},
+  {width:'0', videoId: 'o2IeYyYYe1U'},
+  {width:'0', videoId: '1LOoRJ0s0rw'},
+  {width: '0', videoId: 'NwN7PMQtlo8'},
+  {width: '0', videoId: '3hKRVsDPD9s'},
+  {width: '0', videoId: '1Q6DdTcqGy8'},
+  {width: '0', videoId: 'ksWKmF43AqM'}
 ]
 for (var i = 0; i < playerInfoList; i++) {
-  playerInfoList[i].height = window.innerHeight / playerInfoList.length
+  playerInfoList[i].height = 0
 }
 function onYouTubeIframeAPIReady() {
   for(var i = 0; i < playerInfoList.length;i++) {
